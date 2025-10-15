@@ -186,7 +186,7 @@ a {
 }
 
 .banner-conocenos {
-    background: url('../imagenes/fondo-banner.jpg') no-repeat center center/cover;
+    background: url('../imagenes/generales/conocenos.png') no-repeat center center/cover;
     height: 600px;
     position: relative;
     display: flex;
@@ -234,7 +234,7 @@ a {
 }
 
 .flores-del-mes-section {
-    background: url('../imagenes/fondo-cafe-granos.jpg') no-repeat center center/cover;
+    background: url('../imagenes/generales/granos1.png') no-repeat center center/cover;
     position: relative;
     padding: 50px 5%;
     text-align: center;
@@ -279,14 +279,13 @@ a {
     width: 200px;
     height: 250px;
     background-color: #faf9f6;
-    border-radius: 10px;
+    border-radius: 50% 8px 50% 8px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     position: relative;
-    clip-path: ellipse(50% 100% at 50% 100%); 
 }
 
 .flor-card img {
