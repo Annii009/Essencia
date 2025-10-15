@@ -423,8 +423,8 @@ a {
 }
 
 .map-container {
-    width: 400px;
-    height: 250px;
+    width: 600px;
+    height: 400px;
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
