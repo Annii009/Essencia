@@ -1,9 +1,9 @@
- const apiEssencia = {
+const apiEssencia = {
   "productos_cafeteria": [
     {
       "id": 1,
       "nombre": "Amanecer Americano",
-      "imagen": "/imagenes/cafeteria/cafe1.jpg",
+      "imagen": "../imagenes/cafeteria/cafe1.jpg", // CORREGIDO: ahora usa '../imagenes/'
       "ingredientes": ["Café de tueste medio", "Agua purificada"],
       "descripcion": "El clásico que nunca falla. Suave, aromático y ligero, ideal para comenzar el día.",
       "precio_euros": 2.50,
@@ -12,7 +12,7 @@
     {
       "id": 2,
       "nombre": "Niebla Matutina (Latte)",
-      "imagen": "../imagenes/cafeteria/cafe2.jpg",
+      "imagen": "../imagenes/cafeteria/cafe2.jpg", // CORREGIDO: ahora usa '../imagenes/'
       "ingredientes": ["Doble espresso", "Leche entera vaporizada"],
       "descripcion": "La combinación perfecta de intensidad y suavidad. Un trago de café y espuma sedosa.",
       "precio_euros": 3.00,
@@ -57,7 +57,7 @@
     {
       "id": 7,
       "nombre": "Pecado Fundido (Chocolate Clásico)",
-      "imagen": "../imagenes/cafeteria/chocoTaza.jpg",
+      "imagen": "../imagenes/cafeteria/chocoTaza.jpg", // CORREGIDO: Eliminada la ruta http://localhost:5500/...
       "ingredientes": ["Chocolate negro (70% cacao)", "Leche entera", "Azúcar de caña"],
       "descripcion": "Nuestro chocolate caliente espeso y tradicional, perfecto para los días fríos.",
       "precio_euros": 3.50,

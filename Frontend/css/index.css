@@ -1,15 +1,3 @@
-/* Variables y Reseteo Básico */
-:root {
-    --color-primary: #85a2a9; /* Tono de fondo de la floristería y footer */
-    --color-secondary: #57777c; /* Tono de texto y botones */
-    --color-text-dark: #333;
-    --color-text-light: #fff;
-    --color-button-secondary: #000;
-    --color-button-primary: #fff;
-    --color-section-bg: #fff;
-    --color-coffee-card-bg: #f9f9f9;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -17,14 +5,18 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    color: var(--color-text-dark);
+    font-family: 'Montserrat', sans-serif;
+    color: #1e1e1e;
     line-height: 1.6;
 }
 
 h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-weight: 700;
+}
+
+h3 {
+    font-family: 'Cormorant Garamond', serif;
 }
 
 a {
@@ -32,99 +24,179 @@ a {
     color: inherit;
 }
 
-/* Estilos de Botones Comunes */
 .btn {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 8px;
     font-weight: 700;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
     font-size: 0.9rem;
 }
 
-/* --- AJUSTES DE BOTONES PARA FONDO BLANCO EN HEADER --- */
 .btn-primary {
-    background-color: var(--color-secondary); /* Color Essencia para el botón principal */
-    color: var(--color-text-light);
-    border: 1px solid var(--color-secondary);
+    background-color: #7b9ea8;
+    color: #faf9f6;
+    border: 1px solid #7b9ea8;
+}
+
+.btn-outline-blue {
+    background-color: #faf9f6;
+    color: #7b9ea8;
+    border: 3px solid #7b9ea8;
 }
 
 .btn-secondary {
     background-color: transparent;
-    color: var(--color-secondary); /* Color de texto Essencia para el botón secundario */
-    border: 1px solid var(--color-secondary);
+    color: #7b9ea8;
+    border: 2px solid #7b9ea8;
 }
-/* -------------------------------------------------------- */
 
 .btn-tertiary {
-    background-color: var(--color-text-light);
-    color: var(--color-secondary);
-    border: 1px solid var(--color-text-light);
+    background-color: #faf9f6;
+    color: #7b9ea8;
+    border: 3px solid #faf9f6;
     padding: 12px 30px;
     text-transform: uppercase;
+    
 }
 
-.btn-primary:hover, .btn-secondary:hover, .btn-tertiary:hover {
-    opacity: 0.85;
+.btn-primary:hover {
+    background-color: #658790; 
+    border-color: #658790;
+    opacity: 1; 
 }
 
-/* 1. NAV BAR SUPERIOR */
+.btn-outline-blue:hover {
+    background-color: #7b9ea8;
+    color: #faf9f6;
+    border-color: #7b9ea8;
+    opacity: 1;
+}
+
+.btn-secondary:hover {
+    background-color: #7b9ea8;
+    color: #faf9f6;
+    border-color: #7b9ea8;
+    opacity: 1; 
+}
+
+.btn-tertiary:hover {
+    background-color: #658790;
+    opacity: 1; 
+    color: #faf9f6;
+}
+
 .navbar-top {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* AUMENTO DE TAMAÑO Y FONDO BLANCO */
-    padding: 20px 5%; /* Más padding para hacerlo más grande */
-    background-color: var(--color-text-light); /* Fondo blanco */
-    color: var(--color-text-dark); /* Color de texto oscuro para contraste */
+    padding: 20px 5%;
+    background-color: #faf9f6; 
+    color: #1e1e1e;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Sombra sutil para destacarlo del contenido */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-.nav-links {
+.navbar-container {
     display: flex;
+    width: 100%;
+    justify-content: space-between;
     align-items: center;
 }
 
 .logo {
-    margin-right: 20px;
+    margin-right: 0; 
+}
+
+.logo img {
+    width: 130px;
+    height: auto; 
+    display: block;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #1e1e1e;
+    display: block; 
+    order: 2; 
+}
+
+.nav-menu {
+    width: 100%;
+    max-height: 0; 
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-menu.active {
+    max-height: 500px; 
+    padding-top: 15px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .nav-links ul {
     list-style: none;
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.nav-links ul li {
+    text-align: center;
+    width: 100%;
 }
 
 .nav-links ul li a {
-    padding: 0 15px;
+    padding: 15px 0; 
     display: block;
-    font-size: 0.9rem;
-    font-weight: 300;
-    color: var(--color-text-dark); /* Texto de navegación oscuro */
+    font-size: 1.1rem; 
+    font-weight: 400;
+    color: #1e1e1e;
+    border-bottom: 1px solid #eee;
+}
+
+.nav-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 80%; 
+    margin: 15px 0 10px;
+    gap: 10px;
 }
 
 .nav-buttons a {
-    margin-left: 10px;
+    margin-left: 0;
+    text-align: center;
 }
 
-/* 2. BANNER PRINCIPAL (Conócenos) */
 .banner-conocenos {
     background: url('../imagenes/fondo-banner.jpg') no-repeat center center/cover;
-    height: 450px;
+    height: 600px;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding-right: 5%;
     overflow: hidden;
-    /* ESPACIO EXTRA DEBAJO DE LA SECCIÓN CONÓCENOS */
     margin-bottom: 50px; 
 }
 
-/* Estilo para la imagen Index -1 del conócenos */
 .banner-overlay-img {
     position: absolute;
     top: 0;
@@ -138,15 +210,15 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.6;
 }
 
 .banner-content {
     position: relative; 
     z-index: 2; 
-    background-color: rgba(0, 0, 0, 0.4);
-    color: var(--color-text-light);
+    background-color: #7b9ea8;
+    color: #faf9f6;
     padding: 30px;
+    border-radius: 8px;
     max-width: 400px;
     text-align: right;
 }
@@ -161,7 +233,6 @@ a {
     margin-bottom: 20px;
 }
 
-/* 3. FLORES DEL MES */
 .flores-del-mes-section {
     background: url('../imagenes/fondo-cafe-granos.jpg') no-repeat center center/cover;
     position: relative;
@@ -170,9 +241,6 @@ a {
     overflow: hidden;
 }
 
-/* Resto del CSS (Flores, Barista, Ubicación, Footer) permanece sin cambios en su estructura */
-
-/* Estilo para la imagen Index -1 de las flores del mes */
 .flores-index-1-bg {
     position: absolute;
     top: 0;
@@ -185,7 +253,7 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.4;
+    opacity: 0.8;
 }
 
 .flores-del-mes-section .section-title, .flores-grid {
@@ -194,9 +262,10 @@ a {
 }
 
 .section-title {
-    color: var(--color-text-light);
-    font-size: 2.5rem;
+    color: #faf9f6;
+    font-size: 3.2rem;
     margin-bottom: 30px;
+    text-align: justify;
 }
 
 .flores-grid {
@@ -209,7 +278,7 @@ a {
 .flor-card {
     width: 200px;
     height: 250px;
-    background-color: var(--color-section-bg);
+    background-color: #faf9f6;
     border-radius: 10px;
     overflow: hidden;
     display: flex;
@@ -230,20 +299,18 @@ a {
     z-index: 1;
 }
 
-/* 4. RECOMENDACIÓN DEL BARISTA (Carrusel) */
 .recomendacion-barista-section {
     padding: 50px 0;
-    background-color: var(--color-section-bg);
+    background-color: #faf9f6;
     text-align: center;
 }
 
 .recomendacion-barista-section .section-title {
-    color: var(--color-text-dark);
+    color: #1e1e1e;
     padding: 0 5%; 
     margin-bottom: 20px;
 }
 
-/* Estilos del Carrusel (Barista Carousel) */
 .barista-carousel {
     display: flex;
     overflow-x: auto; 
@@ -256,7 +323,7 @@ a {
 .cafe-card {
     min-width: 250px; 
     scroll-snap-align: start; 
-    background-color: var(--color-coffee-card-bg);
+    background-color: #f9f9f9;
     border-radius: 5px;
     overflow: hidden;
     text-align: left;
@@ -278,7 +345,7 @@ a {
     position: absolute;
     top: 10px;
     right: 10px;
-    color: var(--color-text-light);
+    color: #faf9f6;
     font-size: 1.5rem;
     cursor: pointer;
 }
@@ -288,6 +355,7 @@ a {
 }
 
 .cafe-content h4 {
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     margin-bottom: 5px;
     font-weight: 700;
@@ -303,7 +371,7 @@ a {
 .cafe-content .price {
     font-size: 1.1rem;
     font-weight: 700;
-    color: var(--color-secondary);
+    color: #7b9ea8;
     margin-bottom: 15px;
 }
 
@@ -316,29 +384,42 @@ a {
     flex-grow: 1;
     font-size: 0.85rem;
     padding: 8px 15px;
-    border-radius: 20px;
+    border-radius: 8px;
     text-align: center;
 }
 
 .btn-añadir {
-    background-color: #eee;
-    color: var(--color-text-dark);
+    background-color: transparent;
+    color: #7b9ea8;
+    border: 2px solid #7b9ea8;
 }
 
 .btn-ver {
-    background-color: var(--color-primary);
-    color: var(--color-text-light);
+    background-color: #85a2a9;
+    color: #faf9f6;
+}
+
+.btn-ver:hover {
+    background-color: #658790; 
+    border-color: #658790;
+    opacity: 1; 
+}
+
+.btn-añadir:hover {
+    background-color: #7b9ea8;
+    color: #faf9f6;
+    border-color: #7b9ea8;
+    opacity: 1;
 }
 
 
-/* 5. UBICACIÓN */
 .ubicacion-section {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     padding: 50px 5%;
     gap: 50px;
-    background-color: var(--color-section-bg);
+    background-color: #faf9f6;
 }
 
 .map-container {
@@ -355,15 +436,14 @@ a {
 }
 
 .ubicacion-info .section-title {
-    color: var(--color-text-dark);
-    font-size: 1.8rem;
+    color: #1e1e1e;
+    font-size: 3rem;
     margin-bottom: 10px;
 }
 
-/* 6. FOOTER */
 .main-footer {
-    background-color: var(--color-primary);
-    color: var(--color-text-light);
+    background-color: #7b9ea8;
+    color: #faf9f6;
     padding: 30px 5%;
     font-size: 0.9rem;
 }
@@ -381,7 +461,8 @@ a {
 }
 
 .footer-column h3 {
-    font-size: 1rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
     font-weight: 700;
     margin-bottom: 10px;
 }
@@ -418,18 +499,83 @@ a {
     margin-left: 15px;
 }
 
-/* Media Queries para Responsividad básica */
+@media (min-width: 901px) {
+    .navbar-top {
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-container {
+        width: auto;
+        justify-content: flex-start;
+    }
+    
+    .menu-toggle {
+        display: none; 
+    }
+
+    .nav-menu {
+        max-height: none;
+        overflow: visible;
+        flex-direction: row;
+        width: auto;
+        padding-top: 0;
+        display: flex; 
+    }
+
+    .nav-links {
+        flex-direction: row;
+        width: auto;
+        margin-right: 20px;
+    }
+    
+    .nav-links ul {
+        display: flex; 
+        flex-direction: row;
+        width: auto;
+        padding: 0;
+        margin: 0; 
+        align-items: center; 
+        height: 100%;
+    }
+    
+    .nav-links ul li {
+        text-align: left;
+        width: auto;
+    }
+    
+    .nav-links ul li a {
+        padding: 10px 15px;
+        border-bottom: none;
+        font-size: 1.2rem; 
+        display: inline-block; 
+        line-height: normal;
+        white-space: nowrap; 
+    }
+
+    .nav-buttons {
+        flex-direction: row;
+        width: auto;
+        margin: 0;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .nav-buttons a {
+        margin-left: 10px;
+    }
+    
+    .logo {
+        margin-right: 20px; 
+    }
+}
+
 @media (max-width: 900px) {
     .navbar-top {
-        flex-direction: column;
-        text-align: center;
+        padding: 15px 5%; 
     }
-    .nav-links {
-        margin-bottom: 10px;
-    }
-    .nav-links ul {
-        justify-content: center;
-    }
+
     .footer-content {
         flex-direction: column;
     }
@@ -452,10 +598,6 @@ a {
         justify-content: center;
         padding-right: 0;
         text-align: center;
-    }
-    .nav-links ul {
-        flex-wrap: wrap;
-        justify-content: center;
     }
     .map-container {
         width: 100%;

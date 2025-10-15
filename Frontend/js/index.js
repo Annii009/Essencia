@@ -1,30 +1,49 @@
-// script.js
-
-// NOTA: La constante 'apiEssencia' es accesible desde api.js
-
-// --- Funciones para generar HTML dinámico ---
+const PUERTO_LOCAL = '5500'; 
+const BASE_URL = `http://localhost:${PUERTO_LOCAL}/`;
 
 /**
- * Genera el HTML para la tarjeta de una flor
+ * Función auxiliar para construir la URL absoluta de una imagen.
+ * @param {string} rutaRelativa - La ruta de la imagen de la API (ej: "../imagenes/...").
+ * @returns {string} La ruta absoluta completa de la imagen.
+ */
+const getAbsoluteImageUrl = (rutaRelativa) => {
+    if (rutaRelativa.startsWith('http')) {
+        return rutaRelativa;
+    }
+
+    let rutaLimpia = rutaRelativa
+        .replace('../imagenes/', 'imagenes/') 
+        .replace('./imagenes/', 'imagenes/') 
+        .replace('imagenes/', 'imagenes/'); 
+
+    return `${BASE_URL}${rutaLimpia}`;
+};
+
+/**
+ * Genera el HTML para la tarjeta de una flor.
  * @param {object} flor - Objeto de la flor de la API.
  */
 const createFlowerCard = (flor) => {
+    const imageUrl = getAbsoluteImageUrl(flor.imagen); 
+    
     return `
         <div class="flor-card">
-            <img src="${flor.imagen}" alt="Imagen de ${flor.nombre}">
+            <img src="${imageUrl}" alt="Imagen de ${flor.nombre}">
         </div>
     `;
 };
 
 /**
- * Genera el HTML para la tarjeta de un producto de cafetería
+ * Genera el HTML para la tarjeta de un producto de cafetería.
  * @param {object} producto - Objeto del producto de cafetería de la API.
  */
 const createCoffeeCard = (producto) => {
+    const imageUrl = getAbsoluteImageUrl(producto.imagen);
+
     return `
         <div class="cafe-card">
             <div class="cafe-header">
-                <img src="${producto.imagen}" alt="Imagen de ${producto.nombre}">
+                <img src="${imageUrl}" alt="Imagen de ${producto.nombre}">
                 <i class="far fa-heart heart-icon"></i>
             </div>
             <div class="cafe-content">
@@ -41,8 +60,7 @@ const createCoffeeCard = (producto) => {
 };
 
 /**
- * Selecciona y renderiza las flores en la sección "Flores del mes".
- * Muestra las primeras 4 flores.
+ * Muestra las primeras 4 flores en el contenedor.
  */
 const renderFloresDelMes = () => {
     const container = document.getElementById('flores-del-mes-container');
@@ -54,10 +72,7 @@ const renderFloresDelMes = () => {
 };
 
 /**
- * Función para obtener n elementos aleatorios de un array.
- * @param {Array} arr - El array de origen.
- * @param {number} num - El número de elementos a seleccionar.
- * @returns {Array} Un nuevo array con elementos aleatorios.
+ * Obtiene n elementos aleatorios de un array.
  */
 const getRandomElements = (arr, num) => {
     const shuffled = [...arr].sort(() => 0.5 - Math.random());
@@ -65,11 +80,10 @@ const getRandomElements = (arr, num) => {
 }
 
 /**
- * Selecciona 5 productos aleatorios y los renderiza en el carrusel.
+ * Muestra 5 productos de cafetería aleatorios.
  */
 const renderRecomendacionBarista = () => {
     const container = document.getElementById('recomendacion-barista-container');
-    // Seleccionar 5 productos de cafetería al azar
     const productosAleatorios = getRandomElements(apiEssencia.productos_cafeteria, 5);
 
     if (container) {
@@ -77,7 +91,6 @@ const renderRecomendacionBarista = () => {
     }
 };
 
-// Ejecutar las funciones al cargar el DOM
 document.addEventListener('DOMContentLoaded', () => {
     renderFloresDelMes();
     renderRecomendacionBarista();
