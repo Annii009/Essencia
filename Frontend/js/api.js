@@ -3,7 +3,7 @@ const apiEssencia = {
     {
       "id": 1,
       "nombre": "Amanecer Americano",
-      "imagen": "../imagenes/cafeteria/cafe1.jpg", // CORREGIDO: ahora usa '../imagenes/'
+      "imagen": "../imagenes/cafeteria/cafe1.jpg",
       "ingredientes": ["Café de tueste medio", "Agua purificada"],
       "descripcion": "El clásico que nunca falla. Suave, aromático y ligero, ideal para comenzar el día.",
       "precio_euros": 2.50,
@@ -12,7 +12,7 @@ const apiEssencia = {
     {
       "id": 2,
       "nombre": "Niebla Matutina (Latte)",
-      "imagen": "../imagenes/cafeteria/cafe2.jpg", // CORREGIDO: ahora usa '../imagenes/'
+      "imagen": "../imagenes/cafeteria/cafe2.jpg",
       "ingredientes": ["Doble espresso", "Leche entera vaporizada"],
       "descripcion": "La combinación perfecta de intensidad y suavidad. Un trago de café y espuma sedosa.",
       "precio_euros": 3.00,
