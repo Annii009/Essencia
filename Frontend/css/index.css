@@ -439,7 +439,7 @@ a {
     color: #1e1e1e;
     font-size: 3rem;
     margin-bottom: 10px;
-    text-align: center;
+    text-align: left;
 }
 
 .main-footer {
@@ -589,6 +589,11 @@ a {
         padding-top: 0;
         text-align: center;
     }
+
+    .ubicacion-info .section-title{
+        text-align: center;
+    }
+
     .barista-carousel {
         justify-content: flex-start;
     }
