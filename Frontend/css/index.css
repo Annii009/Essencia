@@ -387,7 +387,7 @@ a {
     text-align: center;
 }
 
-.btn-añadir {
+.btn-anadir {
     background-color: transparent;
     color: #7b9ea8;
     border: 2px solid #7b9ea8;
@@ -404,7 +404,7 @@ a {
     opacity: 1; 
 }
 
-.btn-añadir:hover {
+.btn-anadir:hover {
     background-color: #7b9ea8;
     color: #faf9f6;
     border-color: #7b9ea8;

@@ -12,13 +12,14 @@ body {
 }
 
 h1, h2, .logo-essencia {
-    font-family: 'Playfair Display', 'Georgia', serif;
+    font-family: 'Cormorant Garamond', serif;
     text-align: center;
     margin-bottom: 2rem;
 }
 
 h2 {
     font-weight: 700;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 h3 {
@@ -31,12 +32,11 @@ a {
 }
 
 .section-title {
-    font-size: 2.5rem;
+    font-size: 4rem;
     padding-top: 3rem;
     margin-bottom: 2rem;
 }
 
-/* --- Botones --- */
 .btn {
     padding: 10px 20px;
     border: none;
@@ -98,10 +98,6 @@ a {
     opacity: 1;
     color: #faf9f6;
 }
-
-/* -------------------------------------- */
-/* HEADER / NAV STYLES */
-/* -------------------------------------- */
 
 .navbar-top {
     display: flex;
@@ -201,9 +197,6 @@ a {
     text-align: center;
 }
 
-/* -------------------------------------- */
-/* HERO SECTION */
-/* -------------------------------------- */
 .hero-floristeria {
     position: relative;
     height: 60vh;
@@ -232,19 +225,21 @@ a {
     object-fit: cover;
     object-position: top center;
     display: block;
+    opacity: 0.8;
 }
 
 .hero-content {
     position: relative;
     z-index: 2;
-    background-color: rgba(250, 249, 246, 0.7);
     padding: 1.5rem 2rem;
     max-width: 350px;
 }
 
 .hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
+    font-size: 4.5rem;
+    margin-bottom: 0.2rem;
+    font-family: 'Cormorant Garamond', serif;
+    text-align: right;
 }
 
 .hero-content p {
@@ -256,6 +251,7 @@ a {
     background-color: #9CAF88;
     color: white;
     border: 1px solid #9CAF88;
+    border-radius: 8px;
     padding: 0.7rem 2rem;
 }
 
@@ -263,19 +259,18 @@ a {
     background-color: #829773;
 }
 
-/* -------------------------------------- */
-/* ICON FEATURES SECTION */
-/* -------------------------------------- */
 .icon-features {
     display: flex;
     justify-content: center;
     gap: 3rem;
     padding: 3rem 10%;
     background-color: #FAF9F6;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
 }
 
 .feature-item {
     flex-basis: 20%;
+    min-width: 150px; /* Ancho mínimo para evitar que se aplasten */
     text-align: center;
 }
 
@@ -303,7 +298,6 @@ a {
     flex: 1;
     height: 300px;
     position: relative;
-    
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -311,27 +305,28 @@ a {
     padding: 2rem;
     color: #1E1E1E;
     text-align: center;
-
-    background-color: #FAF9F6; 
+    background-color: #FAF9F6;
 }
 
 .card-large h2 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     margin-bottom: 1rem;
-    background-color: rgba(250, 249, 246, 0.7); 
     padding: 0.5rem 1rem;
     position: relative;
     z-index: 10;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 .btn-card-accion {
     padding: 0.8rem 2.5rem;
-    border: 2px solid #1E1E1E;
+    border: 3px solid #1E1E1E;
     font-weight: bold;
-    background-color: #FAF9F6;
+    border-radius: 8px;
+    background-color: transparent;
     font-size: 1rem;
     position: relative;
     z-index: 10;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .btn-card-accion:hover {
@@ -339,19 +334,18 @@ a {
     color: white;
 }
 
-/* --- Estilos del Fondo con z-index: -1 --- */
 .card-background-image {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 150%; 
-    z-index: 1; 
+    height: 150%;
+    z-index: 1;
     background-size: cover;
     background-position: center top;
+    opacity: 0.6;
 }
 
-/* --- ASIGNACIÓN DE IMÁGENES POR CLASE (Tus nuevas rutas) --- */
 .card-encargos .card-background-image {
     background-image: url('../imagenes/generales/flores1.png');
 }
@@ -360,23 +354,22 @@ a {
     background-image: url('../imagenes/generales/flores2.png');
 }
 
-/* -------------------------------------- */
-/* TRENDING SECTION */
-/* -------------------------------------- */
 .trending-section {
-    padding: 4rem 10% 0 10%;
+    padding: 2rem 10% 0 10%;
     background-color: #FAF9F6;
 }
 
 .trending-products {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 2rem;
     padding-bottom: 4rem;
 }
 
 .trending-card {
     flex: 1;
+    min-width: 280px;
     max-width: 300px;
     border: 1px solid #ddd;
     background-color: #FAF9F6;
@@ -395,22 +388,6 @@ a {
     display: block;
 }
 
-.wishlist-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: rgba(250, 249, 246, 0.7);
-    border: none;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #c00;
-}
-
 .product-info {
     padding: 1rem;
 }
@@ -418,6 +395,7 @@ a {
 .product-name {
     font-weight: bold;
     margin-bottom: 0.3rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .product-desc {
@@ -434,35 +412,15 @@ a {
 
 .product-actions {
     display: flex;
-    gap: 0.5rem;
+    justify-content: center;
+    gap: 10px;
+    flex-grow: 1;
+    font-size: 0.85rem;
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-align: center;
 }
 
-.btn-anadir {
-    flex: 1;
-    background-color: #9CAF88;
-    color: white;
-    border-color: #9CAF88;
-}
-
-.btn-ver {
-    flex: 1;
-    background-color: #FAF9F6;
-    border-color: #9CAF88;
-    color: #9CAF88;
-}
-
-.btn-anadir:hover {
-    background-color: #829773;
-}
-
-.btn-ver:hover {
-    background-color: #9CAF88;
-    color: white;
-}
-
-/* -------------------------------------- */
-/* ESSENCIA ABOUT SECTION */
-/* -------------------------------------- */
 .essencia-about {
     background-color: #9CAF88;
     padding: 4rem 10%;
@@ -491,20 +449,33 @@ a {
     font-size: 1.1rem;
 }
 
-/* -------------------------------------- */
-/* DISEÑOS Y TALLERES SECTION */
-/* -------------------------------------- */
 .disenos-talleres {
     padding: 4rem 0;
     background-color: #FAF9F6;
     text-align: center;
+    position: relative;
+}
+
+.gallery-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
 }
 
 .scroll-gallery {
     display: flex;
     overflow-x: scroll;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
     gap: 1rem;
     padding: 1rem 0;
+}
+
+.scroll-gallery::-webkit-scrollbar {
+    display: none;
 }
 
 .scroll-gallery img {
@@ -515,16 +486,51 @@ a {
 }
 
 .scroll-gallery img:first-child {
-    margin-left: 10%;
+    margin-left: 0;
 }
+
 .scroll-gallery img:last-child {
-    margin-right: 10%;
+    margin-right: 0;
 }
 
-/* -------------------------------------- */
-/* OTRAS SECCIONES ORIGINALES (Ejemplos de estilos adaptados) */
-/* -------------------------------------- */
+.scroll-arrow {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: rgba(250, 249, 246, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 45px;
+    height: 45px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #1E1E1E;
+    transition: background-color 0.3s, color 0.3s;
+}
 
+.scroll-arrow:hover {
+    background-color: #9CAF88;
+    color: #faf9f6;
+}
+
+.scroll-arrow.left {
+    left: 15px;
+}
+
+.scroll-arrow.right {
+    right: 15px;
+}
+
+@media (min-width: 901px) {
+    .scroll-arrow {
+        display: block;
+    }
+    .scroll-gallery {
+        overflow: hidden;
+    }
+}
 .banner-conocenos {
     background-color: #9CAF88;
     height: 600px;
@@ -565,30 +571,6 @@ a {
     margin-bottom: 15px;
 }
 
-.btn-añadir {
-    background-color: transparent;
-    color: #9CAF88;
-    border: 2px solid #9CAF88;
-}
-
-.btn-ver {
-    background-color: #9CAF88;
-    color: #faf9f6;
-}
-
-.btn-ver:hover {
-    background-color: #829773;
-    border-color: #829773;
-    opacity: 1;
-}
-
-.btn-añadir:hover {
-    background-color: #9CAF88;
-    color: #faf9f6;
-    border-color: #9CAF88;
-    opacity: 1;
-}
-
 .ubicacion-section {
     display: flex;
     justify-content: center;
@@ -617,10 +599,6 @@ a {
     margin-bottom: 10px;
     text-align: left;
 }
-
-/* -------------------------------------- */
-/* FOOTER STYLES */
-/* -------------------------------------- */
 
 .main-footer {
     background-color: #9CAF88;
@@ -680,9 +658,7 @@ a {
     margin-left: 15px;
 }
 
-/* -------------------------------------- */
-/* MEDIA QUERIES */
-/* -------------------------------------- */
+/* --- Media Queries para Responsive --- */
 
 @media (min-width: 901px) {
     .navbar-top {
@@ -690,16 +666,13 @@ a {
         justify-content: space-between;
         align-items: center;
     }
-
     .navbar-container {
         width: auto;
         justify-content: flex-start;
     }
-
     .menu-toggle {
         display: none;
     }
-
     .nav-menu {
         max-height: none;
         overflow: visible;
@@ -708,13 +681,11 @@ a {
         padding-top: 0;
         display: flex;
     }
-
     .nav-links {
         flex-direction: row;
         width: auto;
         margin-right: 20px;
     }
-
     .nav-links ul {
         display: flex;
         flex-direction: row;
@@ -724,12 +695,10 @@ a {
         align-items: center;
         height: 100%;
     }
-
     .nav-links ul li {
         text-align: left;
         width: auto;
     }
-
     .nav-links ul li a {
         padding: 10px 15px;
         border-bottom: none;
@@ -738,7 +707,6 @@ a {
         line-height: normal;
         white-space: nowrap;
     }
-
     .nav-buttons {
         flex-direction: row;
         width: auto;
@@ -746,23 +714,30 @@ a {
         gap: 10px;
         align-items: center;
     }
-
     .nav-buttons a {
         margin-left: 10px;
     }
-
     .logo {
         margin-right: 20px;
     }
 }
 
 @media (max-width: 900px) {
+    .section-title {
+        font-size: 2.8rem;
+    }
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+    .cards-section {
+        flex-direction: column;
+    }
     .navbar-top {
         padding: 15px 5%;
     }
-
     .footer-content {
         flex-direction: column;
+        gap: 30px;
     }
     .ubicacion-section {
         flex-direction: column;
@@ -772,25 +747,76 @@ a {
     .ubicacion-info {
         padding-top: 0;
         text-align: center;
+        max-width: 100%;
     }
-
     .ubicacion-info .section-title{
-        text-align: center;
-    }
-
-    .barista-carousel {
-        justify-content: flex-start;
-    }
-}
-
-@media (max-width: 600px) {
-    .banner-conocenos {
-        justify-content: center;
-        padding-right: 0;
         text-align: center;
     }
     .map-container {
         width: 100%;
-        height: 200px;
+    }
+    .card-background-image {
+        height: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .section-title {
+        font-size: 2.2rem;
+        padding-top: 2rem;
+    }
+    .hero-floristeria {
+        justify-content: center;
+        text-align: center;
+        padding: 2rem 5%;
+        height: 50vh;
+    }
+    .hero-content {
+        max-width: 100%;
+        padding: 1rem 1.5rem;
+    }
+    .hero-content h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .hero-content p {
+        font-size: 1rem;
+    }
+    .icon-features,
+    .cards-section,
+    .trending-section,
+    .essencia-about {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .card-large h2 {
+        font-size: 2.5rem;
+    }
+    .banner-conocenos {
+        justify-content: center;
+        padding: 2rem 5%;
+        text-align: center;
+        height: auto;
+    }
+    .banner-content {
+        text-align: center;
+        max-width: 100%;
+    }
+    .map-container {
+        height: 300px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    .social-icons {
+        margin-top: 10px;
+    }
+    .scroll-gallery img:first-child {
+        margin-left: 5%;
+    }
+    .scroll-gallery img:last-child {
+        margin-right: 5%;
     }
 }

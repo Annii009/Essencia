@@ -370,9 +370,9 @@ const apiEssencia = {
     },
     {
       "id": 512,
-      "nombre": "Lantanas",
-      "imagen": "../imagenes/flores/lantanas.png",
-      "detalle": "Un colorido arreglo de lantanas que aporta un toque tropical y lleno de vitalidad a cualquier espacio.",
+      "nombre": "Latanas",
+      "imagen": "../imagenes/flores/latanas.png",
+      "detalle": "Un colorido arreglo de latanas que aporta un toque tropical y lleno de vitalidad a cualquier espacio.",
       "descripcion": "Las Lantanas son nativas de las regiones tropicales de América. Son flores resistentes y con poco mantenimiento que prosperan en pleno sol y resisten bien la sequía.",
       "precio_euros": 23.00
     },

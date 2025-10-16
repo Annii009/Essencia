@@ -1,22 +1,4 @@
 
-// --- DATOS SIMULADOS DE LA API ---
-const apiEssencia = {
-    // ... (otros datos de cafeteria omitidos para brevedad)
-    "productos_floristeria": [
-        // He simplificado los datos de la floristería a solo 10 para el ejemplo,
-        // pero la lógica funciona con los 31 que proporcionaste.
-        { "id": 500, "nombre": "Ramo Amapolas y Rosas", "imagen": "./imagenes/trending-amapolas.jpg", "detalle": "Café importado de colombia con toque de frutas del bosque y un toque mentolado.", "precio_euros": 5.99 },
-        { "id": 501, "nombre": "Ramo Rosas y Peonías", "imagen": "./imagenes/trending-rosas.jpg", "detalle": "Café importado de colombia con toque de frutas del bosque y un toque mentolado.", "precio_euros": 5.99 },
-        { "id": 502, "nombre": "Ramo Nardo Azul", "imagen": "./imagenes/trending-nardo.jpg", "detalle": "Café importado de colombia con toque de frutas del bosque y un toque mentolado.", "precio_euros": 5.99 },
-        { "id": 503, "nombre": "Claveles Rojos", "imagen": "./imagenes/flores/claveles.jpg", "detalle": "Fascinación y amor puro en un solo ramo.", "precio_euros": 18.00 },
-        { "id": 504, "nombre": "Lirios Blancos", "imagen": "./imagenes/flores/lirios.jpg", "detalle": "Elegancia y pureza, un clásico de la floristería.", "precio_euros": 37.00 },
-        { "id": 505, "nombre": "Girasoles Alegres", "imagen": "./imagenes/flores/girasoles.jpg", "detalle": "Un pedacito de sol para alegrar el día.", "precio_euros": 29.00 },
-        { "id": 506, "nombre": "Tulipanes Mixtos", "imagen": "./imagenes/flores/tulipanes.jpg", "detalle": "Símbolo de amor perfecto y primavera.", "precio_euros": 26.00 },
-        { "id": 507, "nombre": "Orquídeas Phalaenopsis", "imagen": "./imagenes/flores/orquideas.jpg", "detalle": "Exótica belleza y lujo duradero.", "precio_euros": 50.00 },
-        { "id": 508, "nombre": "Peonías Lujosas", "imagen": "./imagenes/flores/peonias.jpg", "detalle": "Un ramo espectacular de prosperidad.", "precio_euros": 45.00 },
-        { "id": 509, "nombre": "Margaritas Silvestres", "imagen": "./imagenes/flores/margaritas.jpg", "detalle": "Sencillez y alegría en cada pétalo.", "precio_euros": 17.00 }
-    ]
-};
 
 /**
  * Generador Pseudo-Aleatorio Simple (LCG)
@@ -84,15 +66,15 @@ function renderTrending() {
                 <div class="trending-card">
                     <div class="product-image-container">
                         <img src="${producto.imagen}" alt="${producto.nombre}" onerror="this.src='./imagenes/placeholder.jpg'">
-                        <button class="wishlist-btn"><svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></button>
+                        
                     </div>
                     <div class="product-info">
                         <p class="product-name">Café colombia</p>
                         <p class="product-desc">${producto.detalle}</p>
                         <p class="product-price">${priceDisplay}€</p>
                         <div class="product-actions">
-                            <button class="btn-anadir">Añadir</button>
-                            <button class="btn-ver">Ver</button>
+                            <button class="btn btn-secondary">Añadir</button>
+                            <button class="btn btn-primary">Ver</button>
                         </div>
                     </div>
                 </div>
@@ -104,3 +86,23 @@ function renderTrending() {
 
 // Ejecutar al cargar la página
 document.addEventListener('DOMContentLoaded', renderTrending);
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const scrollLeftBtn = document.getElementById('scroll-left');
+    const scrollRightBtn = document.getElementById('scroll-right');
+    const gallery = document.querySelector('.scroll-gallery');
+
+    if (gallery && scrollLeftBtn && scrollRightBtn) {
+        const scrollAmount = 316;
+
+        scrollLeftBtn.addEventListener('click', () => {
+            gallery.scrollLeft -= scrollAmount;
+        });
+
+        scrollRightBtn.addEventListener('click', () => {
+            gallery.scrollLeft += scrollAmount;
+        });
+    }
+});
