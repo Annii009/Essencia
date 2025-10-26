@@ -56,6 +56,60 @@ const apiEssencia = {
     },
     {
       "id": 7,
+      "nombre": "Origen Etiopía Yirgacheffe (Filtrado)",
+      "imagen": "../imagenes/cafeteria/cafe7.png",
+      "ingredientes": ["Café de especialidad Etiopía Yirgacheffe", "Agua caliente"],
+      "descripcion": "Café de cuerpo ligero con vibrantes notas afrutadas de jazmín y cítricos. Preparado en filtro.",
+      "precio_euros": 4.50,
+      "alergenos": []
+    },
+    {
+      "id": 8,
+      "nombre": "Colombia Supremo (Chemex)",
+      "imagen": "../imagenes/cafeteria/cafe8.png",
+      "ingredientes": ["Café de especialidad Colombia Supremo", "Agua caliente"],
+      "descripcion": "Un café limpio y equilibrado con notas a caramelo y nuez. Preparación elegante y precisa en Chemex.",
+      "precio_euros": 4.80,
+      "alergenos": []
+    },
+    {
+      "id": 9,
+      "nombre": "Capricho de Kenia (V60)",
+      "imagen": "../imagenes/cafeteria/cafe9.png",
+      "ingredientes": ["Café de especialidad Kenia AA", "Agua caliente"],
+      "descripcion": "Intenso y complejo, con acidez brillante y toques de grosella negra y vino. Servido en método V60.",
+      "precio_euros": 4.70,
+      "alergenos": []
+    },
+    {
+      "id": 10,
+      "nombre": "Gota de Brasil (Flat White)",
+      "imagen": "../imagenes/cafeteria/cafe10.png",
+      "ingredientes": ["Doble ristretto de especialidad Brasil", "Leche vaporizada (poca espuma)"],
+      "descripcion": "Un espresso intenso de especialidad brasileño con un sabor a chocolate y nuez, coronado con una fina capa de leche cremosa.",
+      "precio_euros": 3.90,
+      "alergenos": ["Lácteos"]
+    },
+    {
+      "id": 11,
+      "nombre": "Elixir de Sumatra (Cold Brew)",
+      "imagen": "../imagenes/cafeteria/cafe11.png",
+      "ingredientes": ["Café de especialidad Sumatra Mandheling", "Agua fría"],
+      "descripcion": "Extracción en frío de 18 horas para un café de baja acidez, con notas terrosas y achocolatadas. Servido con hielo.",
+      "precio_euros": 4.20,
+      "alergenos": []
+    },
+    {
+      "id": 12,
+      "nombre": "Guatemala Antigua (Cortado)",
+      "imagen": "../imagenes/cafeteria/cafe12.png",
+      "ingredientes": ["Doble espresso de especialidad Guatemala Antigua", "Pequeña cantidad de leche vaporizada"],
+      "descripcion": "Café con cuerpo, dulzor de chocolate y especias. Un espresso cortado con la proporción justa de leche.",
+      "precio_euros": 3.60,
+      "alergenos": ["Lácteos"]
+    },
+    {
+      "id": 13,
       "nombre": "Pecado Fundido (Chocolate Clásico)",
       "imagen": "../imagenes/cafeteria/chocoTaza.png",
       "ingredientes": ["Chocolate negro (70% cacao)", "Leche entera", "Azúcar de caña"],
@@ -64,7 +118,7 @@ const apiEssencia = {
       "alergenos": ["Lácteos", "Soja (posiblemente)"]
     },
     {
-      "id": 8,
+      "id": 14,
       "nombre": "Nube de Invierno (Chocolate con Nata)",
       "imagen": "../imagenes/cafeteria/chocoTaza2.png",
       "ingredientes": ["Chocolate negro", "Leche", "Nata montada fresca"],
@@ -73,7 +127,7 @@ const apiEssencia = {
       "alergenos": ["Lácteos", "Soja (posiblemente)"]
     },
     {
-      "id": 9,
+      "id": 15,
       "nombre": "El Viajero de París (Croissant)",
       "imagen": "../imagenes/cafeteria/cruasan.png",
       "ingredientes": ["Masa de hojaldre de mantequilla", "Huevo (para brillo)"],
@@ -82,7 +136,7 @@ const apiEssencia = {
       "alergenos": ["Gluten", "Lácteos", "Huevo"]
     },
     {
-      "id": 10,
+      "id": 16,
       "nombre": "Susurros de Mantequilla (Minicroissants)",
       "imagen": "../imagenes/cafeteria/cruasanesBlancos.png",
       "ingredientes": ["Masa de hojaldre", "Mantequilla"],
@@ -91,7 +145,7 @@ const apiEssencia = {
       "alergenos": ["Gluten", "Lácteos"]
     },
     {
-      "id": 11,
+      "id": 17,
       "nombre": "Tesoro Escondido (Minicroissants de Crema)",
       "imagen": "../imagenes/cafeteria/cruasanesCrema.png",
       "ingredientes": ["Minicroissant", "Crema pastelera casera"],
@@ -100,7 +154,7 @@ const apiEssencia = {
       "alergenos": ["Gluten", "Lácteos", "Huevo"]
     },
     {
-      "id": 12,
+      "id": 18,
       "nombre": "Tentación Oscura (Minicroissants de Chocolate)",
       "imagen": "../imagenes/cafeteria/cruasanesNegros.png",
       "ingredientes": ["Minicroissant", "Relleno de ganache de chocolate"],
@@ -109,7 +163,7 @@ const apiEssencia = {
       "alergenos": ["Gluten", "Lácteos", "Soja (posiblemente)"]
     },
     {
-      "id": 13,
+      "id": 19,
       "nombre": "Lágrimas de Chocolate (Galleta)",
       "imagen": "../imagenes/cafeteria/galletas.png",
       "ingredientes": ["Harina de trigo", "Mantequilla", "Azúcar moreno", "Chips de chocolate negro"],
@@ -118,7 +172,7 @@ const apiEssencia = {
       "alergenos": ["Gluten", "Lácteos", "Huevo", "Soja (posiblemente)"]
     },
     {
-      "id": 14,
+      "id": 20,
       "nombre": "Elixir Zen (Matcha Latte)",
       "imagen": "../imagenes/cafeteria/matcha1.png",
       "ingredientes": ["Té Matcha ceremonial", "Leche vegetal o entera vaporizada"],
@@ -127,7 +181,7 @@ const apiEssencia = {
       "alergenos": ["Lácteos (si se elige leche entera)"]
     },
     {
-      "id": 15,
+      "id": 21,
       "nombre": "Jardín Japonés (Matcha con Leche)",
       "imagen": "../imagenes/cafeteria/matcha2.png",
       "ingredientes": ["Té Matcha ceremonial", "Leche fría o caliente"],
@@ -136,7 +190,7 @@ const apiEssencia = {
       "alergenos": ["Lácteos (si se elige leche entera)"]
     },
     {
-      "id": 16,
+      "id": 22,
       "nombre": "Starter Pack 'Mañana Clara'",
       "imagen": "../imagenes/cafeteria/portada1.png",
       "ingredientes": ["Tostada de pan de masa madre", "Mermelada artesanal", "Café o té"],
@@ -145,7 +199,7 @@ const apiEssencia = {
       "alergenos": ["Gluten", "Lácteos (si el café lleva leche)"]
     },
     {
-      "id": 17,
+      "id": 23,
       "nombre": "Brunch 'Festín de Amigos'",
       "imagen": "../imagenes/cafeteria/portada2.png",
       "ingredientes": ["Variedad de pan y bollería", "Huevos revueltos", "Queso y jamón", "Café y Zumo"],
@@ -154,7 +208,7 @@ const apiEssencia = {
       "alergenos": ["Gluten", "Lácteos", "Huevo", "Frutos secos (posiblemente)"]
     },
     {
-      "id": 18,
+      "id": 24,
       "nombre": "Espiral de Ceylán (Rollito de Canela)",
       "imagen": "../imagenes/cafeteria/rollitoCanela.png",
       "ingredientes": ["Masa de brioche", "Canela de Ceylán", "Glaseado de queso crema"],
@@ -163,7 +217,7 @@ const apiEssencia = {
       "alergenos": ["Gluten", "Lácteos", "Huevo"]
     },
     {
-      "id": 19,
+      "id": 25,
       "nombre": "Trilogía de Cacao (Tarta Tres Chocolates)",
       "imagen": "../imagenes/cafeteria/tarta3Chocos.png",
       "ingredientes": ["Chocolate negro", "Chocolate con leche", "Chocolate blanco", "Nata", "Base de galleta"],
@@ -172,7 +226,7 @@ const apiEssencia = {
       "alergenos": ["Gluten", "Lácteos", "Soja"]
     },
     {
-      "id": 20,
+      "id": 26,
       "nombre": "Volcán de Frutas Prohibidas",
       "imagen": "../imagenes/cafeteria/tarta3Chocos2.png",
       "ingredientes": ["Bizcocho de chocolate", "Ganache", "Mermelada de frutos rojos"],
@@ -181,7 +235,7 @@ const apiEssencia = {
       "alergenos": ["Gluten", "Lácteos", "Huevo"]
     },
     {
-      "id": 21,
+      "id": 27,
       "nombre": "Suspiro de Nata (Tarta de Queso)",
       "imagen": "../imagenes/cafeteria/tartaBlanca.png",
       "ingredientes": ["Queso crema", "Nata fresca", "Huevo", "Base de galleta"],
@@ -190,7 +244,7 @@ const apiEssencia = {
       "alergenos": ["Gluten", "Lácteos", "Huevo"]
     },
     {
-      "id": 22,
+      "id": 28,
       "nombre": "El Jardín de las Fresas",
       "imagen": "../imagenes/cafeteria/tartaFresas.png",
       "ingredientes": ["Bizcocho genovés", "Nata montada", "Fresas naturales"],
@@ -199,7 +253,7 @@ const apiEssencia = {
       "alergenos": ["Gluten", "Lácteos", "Huevo"]
     },
     {
-      "id": 23,
+      "id": 29,
       "nombre": "El Otoño de Eva (Tarta de Manzana)",
       "imagen": "../imagenes/cafeteria/tartaManzana.png",
       "ingredientes": ["Manzana 'Golden'", "Canela", "Masa de hojaldre", "Mantequilla"],
@@ -208,7 +262,7 @@ const apiEssencia = {
       "alergenos": ["Gluten", "Lácteos"]
     },
     {
-      "id": 24,
+      "id": 30,
       "nombre": "Boscaje Encantado",
       "imagen": "../imagenes/cafeteria/tartaNegro.png",
       "ingredientes": ["Mousse de queso", "Gelatina de frutos del bosque", "Base de chocolate"],
@@ -217,7 +271,7 @@ const apiEssencia = {
       "alergenos": ["Gluten", "Lácteos", "Soja (posiblemente)"]
     },
     {
-      "id": 25,
+      "id": 31,
       "nombre": "Volcán de Queso y Bayas",
       "imagen": "../imagenes/cafeteria/tartaQueso.png",
       "ingredientes": ["Tarta de queso horneada", "Salsa casera de frutos rojos"],
@@ -226,7 +280,7 @@ const apiEssencia = {
       "alergenos": ["Gluten", "Lácteos", "Huevo"]
     },
     {
-      "id": 26,
+      "id": 32,
       "nombre": "La Tierra de Oz (Tarta de Zanahoria)",
       "imagen": "../imagenes/cafeteria/tartaZanahorias.png",
       "ingredientes": ["Zanahoria rallada", "Especias (canela, nuez moscada)", "Nueces", "Glaseado de queso crema"],
@@ -235,7 +289,7 @@ const apiEssencia = {
       "alergenos": ["Gluten", "Lácteos", "Huevo", "Frutos secos (nueces)"]
     },
     {
-      "id": 27,
+      "id": 33,
       "nombre": "Fusión Dúo (Zanahoria y Queso)",
       "imagen": "../imagenes/cafeteria/tartaZanahorias2.png",
       "ingredientes": ["Capas de tarta de zanahoria", "Capas de tarta de queso", "Glaseado"],
@@ -244,7 +298,7 @@ const apiEssencia = {
       "alergenos": ["Gluten", "Lácteos", "Huevo"]
     },
     {
-      "id": 28,
+      "id": 34,
       "nombre": "Verde Despertar (Tostada de Aguacate)",
       "imagen": "../imagenes/cafeteria/tostadaAguacate.png",
       "ingredientes": ["Pan de semillas tostado", "Aguacate laminado", "Tomate cherry", "AOVE"],
@@ -253,7 +307,7 @@ const apiEssencia = {
       "alergenos": ["Gluten", "Sésamo (si el pan lleva)"]
     },
     {
-      "id": 29,
+      "id": 35,
       "nombre": "El Tesoro Ibérico",
       "imagen": "../imagenes/cafeteria/tostadaJamon1.png",
       "ingredientes": ["Pan de cristal", "Tomate triturado", "Aceite de oliva", "Jamón Ibérico de Bellota"],
@@ -262,7 +316,7 @@ const apiEssencia = {
       "alergenos": ["Gluten"]
     },
     {
-      "id": 30,
+      "id": 36,
       "nombre": "El Clásico Serrano",
       "imagen": "../imagenes/cafeteria/tostadaJamon2.png",
       "ingredientes": ["Pan rústico", "Tomate natural rallado", "Aceite de oliva", "Jamón Serrano"],
