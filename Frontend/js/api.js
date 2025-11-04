@@ -189,26 +189,26 @@ const apiEssencia = {
       "precio_euros": 3.50,
       "alergenos": ["Lácteos (si se elige leche entera)"]
     },
+    // {
+    //   "id": 22,
+    //   "nombre": "Starter Pack 'Mañana Clara'",
+    //   "imagen": "../imagenes/cafeteria/portada1.png",
+    //   "ingredientes": ["Tostada de pan de masa madre", "Mermelada artesanal", "Café o té"],
+    //   "descripcion": "El set básico ideal para un desayuno individual rápido y delicioso.",
+    //   "precio_euros": 7.50,
+    //   "alergenos": ["Gluten", "Lácteos (si el café lleva leche)"]
+    // },
+    // {
+    //   "id": 23,
+    //   "nombre": "Brunch 'Festín de Amigos'",
+    //   "imagen": "../imagenes/cafeteria/portada2.png",
+    //   "ingredientes": ["Variedad de pan y bollería", "Huevos revueltos", "Queso y jamón", "Café y Zumo"],
+    //   "descripcion": "Un gran surtido para compartir. La opción más completa para un brunch abundante.",
+    //   "precio_euros": 12.00,
+    //   "alergenos": ["Gluten", "Lácteos", "Huevo", "Frutos secos (posiblemente)"]
+    // },
     {
       "id": 22,
-      "nombre": "Starter Pack 'Mañana Clara'",
-      "imagen": "../imagenes/cafeteria/portada1.png",
-      "ingredientes": ["Tostada de pan de masa madre", "Mermelada artesanal", "Café o té"],
-      "descripcion": "El set básico ideal para un desayuno individual rápido y delicioso.",
-      "precio_euros": 7.50,
-      "alergenos": ["Gluten", "Lácteos (si el café lleva leche)"]
-    },
-    {
-      "id": 23,
-      "nombre": "Brunch 'Festín de Amigos'",
-      "imagen": "../imagenes/cafeteria/portada2.png",
-      "ingredientes": ["Variedad de pan y bollería", "Huevos revueltos", "Queso y jamón", "Café y Zumo"],
-      "descripcion": "Un gran surtido para compartir. La opción más completa para un brunch abundante.",
-      "precio_euros": 12.00,
-      "alergenos": ["Gluten", "Lácteos", "Huevo", "Frutos secos (posiblemente)"]
-    },
-    {
-      "id": 24,
       "nombre": "Espiral de Ceylán (Rollito de Canela)",
       "imagen": "../imagenes/cafeteria/rollitoCanela.png",
       "ingredientes": ["Masa de brioche", "Canela de Ceylán", "Glaseado de queso crema"],
@@ -217,7 +217,7 @@ const apiEssencia = {
       "alergenos": ["Gluten", "Lácteos", "Huevo"]
     },
     {
-      "id": 25,
+      "id": 23,
       "nombre": "Trilogía de Cacao (Tarta Tres Chocolates)",
       "imagen": "../imagenes/cafeteria/tarta3Chocos.png",
       "ingredientes": ["Chocolate negro", "Chocolate con leche", "Chocolate blanco", "Nata", "Base de galleta"],
@@ -226,7 +226,7 @@ const apiEssencia = {
       "alergenos": ["Gluten", "Lácteos", "Soja"]
     },
     {
-      "id": 26,
+      "id": 24,
       "nombre": "Volcán de Frutas Prohibidas",
       "imagen": "../imagenes/cafeteria/tarta3Chocos2.png",
       "ingredientes": ["Bizcocho de chocolate", "Ganache", "Mermelada de frutos rojos"],
@@ -235,7 +235,7 @@ const apiEssencia = {
       "alergenos": ["Gluten", "Lácteos", "Huevo"]
     },
     {
-      "id": 27,
+      "id": 25,
       "nombre": "Suspiro de Nata (Tarta de Queso)",
       "imagen": "../imagenes/cafeteria/tartaBlanca.png",
       "ingredientes": ["Queso crema", "Nata fresca", "Huevo", "Base de galleta"],
@@ -244,7 +244,7 @@ const apiEssencia = {
       "alergenos": ["Gluten", "Lácteos", "Huevo"]
     },
     {
-      "id": 28,
+      "id": 26,
       "nombre": "El Jardín de las Fresas",
       "imagen": "../imagenes/cafeteria/tartaFresas.png",
       "ingredientes": ["Bizcocho genovés", "Nata montada", "Fresas naturales"],
@@ -253,7 +253,7 @@ const apiEssencia = {
       "alergenos": ["Gluten", "Lácteos", "Huevo"]
     },
     {
-      "id": 29,
+      "id": 27,
       "nombre": "El Otoño de Eva (Tarta de Manzana)",
       "imagen": "../imagenes/cafeteria/tartaManzana.png",
       "ingredientes": ["Manzana 'Golden'", "Canela", "Masa de hojaldre", "Mantequilla"],
@@ -262,7 +262,7 @@ const apiEssencia = {
       "alergenos": ["Gluten", "Lácteos"]
     },
     {
-      "id": 30,
+      "id": 28,
       "nombre": "Boscaje Encantado",
       "imagen": "../imagenes/cafeteria/tartaNegro.png",
       "ingredientes": ["Mousse de queso", "Gelatina de frutos del bosque", "Base de chocolate"],
@@ -271,7 +271,7 @@ const apiEssencia = {
       "alergenos": ["Gluten", "Lácteos", "Soja (posiblemente)"]
     },
     {
-      "id": 31,
+      "id": 29,
       "nombre": "Volcán de Queso y Bayas",
       "imagen": "../imagenes/cafeteria/tartaQueso.png",
       "ingredientes": ["Tarta de queso horneada", "Salsa casera de frutos rojos"],
@@ -280,7 +280,7 @@ const apiEssencia = {
       "alergenos": ["Gluten", "Lácteos", "Huevo"]
     },
     {
-      "id": 32,
+      "id": 30,
       "nombre": "La Tierra de Oz (Tarta de Zanahoria)",
       "imagen": "../imagenes/cafeteria/tartaZanahorias.png",
       "ingredientes": ["Zanahoria rallada", "Especias (canela, nuez moscada)", "Nueces", "Glaseado de queso crema"],
@@ -288,17 +288,17 @@ const apiEssencia = {
       "precio_euros": 4.20,
       "alergenos": ["Gluten", "Lácteos", "Huevo", "Frutos secos (nueces)"]
     },
+    // {
+    //   "id": 33,
+    //   "nombre": "Fusión Dúo (Zanahoria y Queso)",
+    //   "imagen": "../imagenes/cafeteria/tartaZanahorias2.png",
+    //   "ingredientes": ["Capas de tarta de zanahoria", "Capas de tarta de queso", "Glaseado"],
+    //   "descripcion": "La combinación perfecta entre la dulzura de la zanahoria y la cremosidad del queso.",
+    //   "precio_euros": 4.50,
+    //   "alergenos": ["Gluten", "Lácteos", "Huevo"]
+    // },
     {
-      "id": 33,
-      "nombre": "Fusión Dúo (Zanahoria y Queso)",
-      "imagen": "../imagenes/cafeteria/tartaZanahorias2.png",
-      "ingredientes": ["Capas de tarta de zanahoria", "Capas de tarta de queso", "Glaseado"],
-      "descripcion": "La combinación perfecta entre la dulzura de la zanahoria y la cremosidad del queso.",
-      "precio_euros": 4.50,
-      "alergenos": ["Gluten", "Lácteos", "Huevo"]
-    },
-    {
-      "id": 34,
+      "id": 31,
       "nombre": "Verde Despertar (Tostada de Aguacate)",
       "imagen": "../imagenes/cafeteria/tostadaAguacate.png",
       "ingredientes": ["Pan de semillas tostado", "Aguacate laminado", "Tomate cherry", "AOVE"],
@@ -307,7 +307,7 @@ const apiEssencia = {
       "alergenos": ["Gluten", "Sésamo (si el pan lleva)"]
     },
     {
-      "id": 35,
+      "id": 32,
       "nombre": "El Tesoro Ibérico",
       "imagen": "../imagenes/cafeteria/tostadaJamon1.png",
       "ingredientes": ["Pan de cristal", "Tomate triturado", "Aceite de oliva", "Jamón Ibérico de Bellota"],
@@ -316,7 +316,7 @@ const apiEssencia = {
       "alergenos": ["Gluten"]
     },
     {
-      "id": 36,
+      "id": 33,
       "nombre": "El Clásico Serrano",
       "imagen": "../imagenes/cafeteria/tostadaJamon2.png",
       "ingredientes": ["Pan rústico", "Tomate natural rallado", "Aceite de oliva", "Jamón Serrano"],
@@ -347,7 +347,7 @@ const apiEssencia = {
       "nombre": "Campanillas",
       "imagen": "../imagenes/flores/campanillas.png",
       "detalle": "Un fresco bouquet de campanillas silvestres, evocando la tranquilidad de los bosques y la frescura de la mañana.",
-      "descripcion": "Las campanillas (Campanula spp.) prefieren la sombra parcial o plena y suelos húmedos, pero bien drenados. Muchas especies son nativas de las regiones templadas del hemisferio norte.",
+      "descripcion": "Las campanillas (Campanula spp.) prefieren la sombra parcial o plena y suelos húmedos, pero bien drenados. Muchas especies Tesoson nativas de las regiones templadas del hemisferio norte.",
       "precio_euros": 20.00
     },
     {
