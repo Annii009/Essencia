@@ -189,24 +189,6 @@ const apiEssencia = {
       "precio_euros": 3.50,
       "alergenos": ["Lácteos (si se elige leche entera)"]
     },
-    // {
-    //   "id": 22,
-    //   "nombre": "Starter Pack 'Mañana Clara'",
-    //   "imagen": "../imagenes/cafeteria/portada1.png",
-    //   "ingredientes": ["Tostada de pan de masa madre", "Mermelada artesanal", "Café o té"],
-    //   "descripcion": "El set básico ideal para un desayuno individual rápido y delicioso.",
-    //   "precio_euros": 7.50,
-    //   "alergenos": ["Gluten", "Lácteos (si el café lleva leche)"]
-    // },
-    // {
-    //   "id": 23,
-    //   "nombre": "Brunch 'Festín de Amigos'",
-    //   "imagen": "../imagenes/cafeteria/portada2.png",
-    //   "ingredientes": ["Variedad de pan y bollería", "Huevos revueltos", "Queso y jamón", "Café y Zumo"],
-    //   "descripcion": "Un gran surtido para compartir. La opción más completa para un brunch abundante.",
-    //   "precio_euros": 12.00,
-    //   "alergenos": ["Gluten", "Lácteos", "Huevo", "Frutos secos (posiblemente)"]
-    // },
     {
       "id": 22,
       "nombre": "Espiral de Ceylán (Rollito de Canela)",
@@ -288,15 +270,6 @@ const apiEssencia = {
       "precio_euros": 4.20,
       "alergenos": ["Gluten", "Lácteos", "Huevo", "Frutos secos (nueces)"]
     },
-    // {
-    //   "id": 33,
-    //   "nombre": "Fusión Dúo (Zanahoria y Queso)",
-    //   "imagen": "../imagenes/cafeteria/tartaZanahorias2.png",
-    //   "ingredientes": ["Capas de tarta de zanahoria", "Capas de tarta de queso", "Glaseado"],
-    //   "descripcion": "La combinación perfecta entre la dulzura de la zanahoria y la cremosidad del queso.",
-    //   "precio_euros": 4.50,
-    //   "alergenos": ["Gluten", "Lácteos", "Huevo"]
-    // },
     {
       "id": 31,
       "nombre": "Verde Despertar (Tostada de Aguacate)",

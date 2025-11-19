@@ -1,0 +1,33 @@
+-- TABLA PRINCIPAL DE CAFETERÍA
+CREATE TABLE ProductosCafeteria (
+    ID INT PRIMARY KEY,
+    Nombre NVARCHAR(100) NOT NULL,
+    Categoria NVARCHAR(50) NOT NULL, -- Bebida o Comida
+    ImagenRuta NVARCHAR(255),
+    Descripcion NVARCHAR(500),
+    PrecioEuros DECIMAL(10, 2) NOT NULL
+);
+
+-- TABLA PARA NORMALIZAR INGREDIENTES
+CREATE TABLE IngredientesCafeteria (
+    ID INT IDENTITY(1,1) PRIMARY KEY,
+    ProductoID INT FOREIGN KEY REFERENCES ProductosCafeteria(ID) NOT NULL,
+    Ingrediente NVARCHAR(100) NOT NULL
+);
+
+-- TABLA PARA NORMALIZAR ALÉRGENOS
+CREATE TABLE AlergenosCafeteria (
+    ID INT IDENTITY(1,1) PRIMARY KEY,
+    ProductoID INT FOREIGN KEY REFERENCES ProductosCafeteria(ID) NOT NULL,
+    Alergeno NVARCHAR(100) NOT NULL
+);
+
+-- TABLA PRINCIPAL DE FLORISTERÍA
+CREATE TABLE ProductosFloristeria (
+    ID INT PRIMARY KEY,
+    Nombre NVARCHAR(100) NOT NULL,
+    ImagenRuta NVARCHAR(255),
+    Detalle NVARCHAR(255),
+    DescripcionCuidados NVARCHAR(MAX),
+    PrecioEuros DECIMAL(10, 2) NOT NULL
+);
