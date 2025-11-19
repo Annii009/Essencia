@@ -1,0 +1,34 @@
+# =========================
+# Node.js (Frontend / JS)
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+dist/
+build/
+
+# =========================
+# C# / .NET (Backend)
+# =========================
+# Archivos de compilación (binarios y objetos temporales)
+bin/
+obj/
+
+# Archivos específicos de usuario (no deben compartirse)
+*.user
+*.userosscache
+*.suo
+
+# Carpeta de configuración de Visual Studio
+.vs/
+
+# Archivos de publicación
+*.publishsettings
+
+# =========================
+# Sistema Operativo (General)
+# =========================
+.DS_Store
+Thumbs.db
