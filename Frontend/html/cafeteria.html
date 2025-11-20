@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESSENCIA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Montserrat:wght@300;400;700&family=Tangerine:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/cafeteria.css">
+    <script src="../js/api.js"></script>
+    <script src="../js/cafeteria.js" defer></script>
+    <script src="../js/toggle.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <a href="../html/index.html">
+                    <img src="../imagenes/generales/logo1-rosa.png" alt="Logo Essencia">
+                </a>
+            </div>
+            <button class="header__toggle menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div class="header__nav nav-menu">
+            <nav class="header__list">
+                <ul>
+                    <li class="header__item"><a href="../html/floristeria.html" class="header__link">Floristería</a>
+                    </li>
+                    <li class="header__item"><a href="../html/index.html" class="header__link">Inicio</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Quiénes somos</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Menú</a></li>
+                </ul>
+            </nav>
+            <div class="header__buttons">
+                <a href="../html/register.html" class="btn btn--outline-rose">Únete ahora</a>
+                <a href="../html/login.html" class="btn btn--rose">Iniciar sesión</a>
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-cafe">
+            <div class="hero-cafe__bg">
+                <img src="../imagenes/generales/cafe-cafeteria.png" alt="Café para llevar">
+            </div>
+            <div class="hero-cafe__overlay"></div>
+            <div class="hero-cafe__content">
+                <h1 class="hero-cafe__title">Cafetería</h1>
+                <p class="hero-cafe__text">Café importado de muchas partes del mundo, al igual que nuestra deliciosa
+                    bollería traída directamente de París.</p>
+                <button class="btn btn--rose">Ver todo</button>
+            </div>
+        </section>
+
+
+        <section class="features">
+            <div class="features__item">
+                <i class="fas fa-shopping-cart features__icon"></i>
+                <p>Haz tu pedido online y recógelo sin esperas.</p>
+            </div>
+            <div class="features__item">
+                <i class="far fa-clock features__icon"></i>
+                <p>Abiertos todos los días desde temprano.</p>
+            </div>
+            <div class="features__item">
+                <i class="fas fa-dollar-sign features__icon"></i>
+                <p>La mejor calidad al mejor precio.</p>
+            </div>
+            <div class="features__item">
+                <i class="fas fa-truck features__icon"></i>
+                <p>Envío a domicilio rápido y seguro.</p>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <div class="products-section__grid" id="tartas-container">
+            </div>
+        </section>
+
+        <section class="about-cafe">
+            <div class="about-cafe__image">
+                <img src="../imagenes/generales/portada3.png" alt="Mesa de desayuno con cruasanes">
+            </div>
+            <div class="about-cafe__content">
+                <h2 class="about-cafe__logo">ESSENCIA <span class="about-cafe__subtitle">Floristería & Cafetería</span>
+                </h2>
+                <p>En Essencia, creemos que el café es más que una bebida: es una experiencia. Trabajamos con
+                    <strong>cafés de especialidad</strong> seleccionados desde el origen, tostados con precisión para
+                    revelar sus notas únicas y su historia en cada sorbo.</p>
+                <p><strong>Essencia:</strong> Donde cada grano revela su alma.</p>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <h2 class="section-title">Desayunos Salados</h2>
+            <div class="products-section__grid" id="salados-container">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer footer--rose">
+        <div class="footer__content">
+            <div class="footer__column">
+                <h3>Sobre nosotros</h3>
+                <ul>
+                    <li><a href="#">Acerca de ESSENCIA</a></li>
+                    <li><a href="#">Quiénes somos</a></li>
+                    <li><a href="#">Ubicación</a></li>
+                    <li><a href="#">Nuestro local</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3>Información nutricional</h3>
+                <ul>
+                    <li><a href="#">Información nutricional</a></li>
+                    <li><a href="#">Alérgenos</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3>Pedidos y talleres</h3>
+                <ul>
+                    <li><a href="#">Pedidos online</a></li>
+                    <li><a href="#">Reservas floristería</a></li>
+                    <li><a href="#">Reserva talleres</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3>Trabaja con nosotros</h3>
+                <ul>
+                    <li><a href="#">ESSENCIA career</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__legal">
+                <a href="#">Contacto</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Política de Cookies</a>
+            </div>
+            <div class="footer__social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
