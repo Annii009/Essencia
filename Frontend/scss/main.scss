@@ -1,19 +1,16 @@
-// Colores
+
 $color-primary: #7b9ea8;       
 $color-primary-dark: #658790;  
 $color-bg: #faf9f6; 
 $color-text: #1e1e1e;          
 $color-text-light: #666;       
 
-// Fuentes
 $font-main: 'Montserrat', sans-serif;
 $font-title: 'Cormorant Garamond', serif;
 
-// Breakpoints
 $bp-tablet: 600px;
 $bp-desktop: 901px;
 
-// --- RESET Y GENERALES ---
 * {
     margin: 0;
     padding: 0;
@@ -41,7 +38,6 @@ a {
     color: inherit;
 }
 
-// --- COMPONENTES (Botones) ---
 .btn {
     padding: 10px 20px;
     border: none;
@@ -90,7 +86,6 @@ a {
 }
 
 
-// --- HEADER ---
 .header {
     display: flex;
     flex-direction: column;
@@ -239,7 +234,6 @@ a {
 }
 
 
-// --- HERO / BANNER ---
 .banner {
     background: url('../imagenes/generales/conocenos.png') no-repeat center center/cover;
     height: 600px;
@@ -292,7 +286,6 @@ a {
 }
 
 
-// --- SECCIÓN FLORES ---
 .flores-section {
     background: url('../imagenes/generales/granos1.png') no-repeat center center/cover;
     position: relative;
@@ -473,7 +466,6 @@ a {
     }
 }
 
-// --- UBICACIÓN ---
 .location {
     display: flex;
     flex-direction: column;
@@ -523,7 +515,6 @@ a {
 }
 
 
-// --- FOOTER ---
 .footer {
     background-color: $color-primary;
     color: $color-bg;
