@@ -9,10 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="../css/catalogoFloristeria.css">
+    <link rel="stylesheet" href="../css/detalleFloristeria.css">
     
     <script src="../js/api.js"></script>
-    <script src="../js/catalogoFloristeria.js" defer></script>
+    <script src="../js/detalleFloristeria.js" defer></script>
     <script src="../js/toggle.js"></script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -44,31 +44,55 @@
             <div class="header__buttons">
                 <a href="../html/register.html" class="btn btn--outline-green">Únete ahora</a>
                 <a href="../html/login.html" class="btn btn--green">Iniciar sesión</a>
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
             </div>
         </div>
     </header>
 
-    <main>
-        <section class="hero-catalog" role="banner">
-            <div class="hero-catalog__bg">
-                <img src="../imagenes/generales/flores-principal.png" alt="Flores frescas de fondo">
+    <main class="product-detail">
+        <section class="product-main">
+            <div class="product-main__gallery">
+                <img id="detail-image" src="" alt="Detalle flor">
             </div>
 
-            <div class="hero-catalog__content">
-                <img src="../imagenes/generales/mancha-verde.png" alt="" class="hero-catalog__splash">
-                <h1 class="hero-catalog__title">Floristería</h1>
-                <p class="hero-catalog__text">En Essencia, transformamos las flores en emociones. Tienes a tu disposición la belleza y frescura que buscas, ya sea a través de encargos personalizados, nuestra venta online con envío a domicilio, o visitando nuestra tienda.</p>
+            <div class="product-main__info">
+                <h1 id="detail-title" class="product-main__title"></h1>
+                <p id="detail-short-desc" class="product-main__short-desc"></p>
+                
+                <div class="product-main__price-row">
+                    <span id="detail-price" class="product-main__price"></span>
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+
+                <div class="product-main__actions">
+                    <button class="btn btn--outline-green btn--full">Encargar</button>
+                    <button class="btn btn--green btn--full">Añadir a la cesta</button>
+                </div>
+
+                <div class="product-accordion">
+                    <details class="product-accordion__item" open>
+                        <summary class="product-accordion__header">
+                            Descripción <span class="icon"></span>
+                        </summary>
+                        <div class="product-accordion__content">
+                            <p id="detail-long-desc"></p>
+                        </div>
+                    </details>
+                    <details class="product-accordion__item">
+                        <summary class="product-accordion__header">
+                            Encargos <span class="icon"></span>
+                        </summary>
+                        <div class="product-accordion__content">
+                            <p>Realizamos encargos personalizados para eventos especiales. Contáctanos con 48 horas de antelación para asegurar la disponibilidad de flores específicas.</p>
+                        </div>
+                    </details>
+                </div>
             </div>
         </section>
 
-        <section class="catalog">
-            <h2 class="catalog__title">Nuestro Catálogo</h2>
-            
-            <div id="product-grid" class="catalog__grid">
-            </div>
-            
-            <div id="ver-mas-container" class="catalog__actions">
-                <button id="ver-mas-btn" class="btn btn--green">Ver más</button>
+        <section class="related-products">
+            <h2 class="related-products__title">Te puede interesar</h2>
+            <div id="related-grid" class="related-products__grid">
             </div>
         </section>
     </main>
