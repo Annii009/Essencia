@@ -9,13 +9,14 @@ public class ProductosCafeteria
     public string ImagenRuta {get; set;}
     public string Descripcion {get; set;}
     public decimal PrecioEuros {get; set;}
-
+    public List<IngredientesCafeteria> Ingredientes {get; set;} = new();
+    public List<AlergenosCafeteria> Alergenos {get; set;} = new();
 
     public ProductosCafeteria(){}
 
-    public ProductosCafeteria(int CafeteriaId, string Nombre, string Categoria, string ImagenRuta, string Descripcion, decimal PrecioEuros)
+    public ProductosCafeteria(int ProductosCafeteriaId, string Nombre, string Categoria, string ImagenRuta, string Descripcion, decimal PrecioEuros)
     {
-        ProductosCafeteriaId = = CafeteriaId;
+        ProductosCafeteriaId = ProductosCafeteriaId;
         Nombre = Nombre;
         Categoria = Categoria;
         ImagenRuta = ImagenRuta;

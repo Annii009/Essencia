@@ -1,6 +1,6 @@
 public class ProductosFloristeria
 {
-    public int FloristeriaId { get; set; }
+    public int ProductosFloristeriaId { get; set; }
     public string Nombre { get; set; }
     public string ImagenRuta {get; set;}
     public string Detalle {get; set;}
@@ -9,9 +9,9 @@ public class ProductosFloristeria
 
     public ProductosFloristeria(){}
 
-    public ProductosFloristeria(int FloristeriaId, string Nombre, string ImagenRuta, string Detalle, string DescripcionCuidados, decimal PrecioEuros)
+    public ProductosFloristeria(int ProductosFloristeriaId, string Nombre, string ImagenRuta, string Detalle, string DescripcionCuidados, decimal PrecioEuros)
     {
-        FloristeriaId = FloristeriaId;
+        ProductosFloristeriaId = ProductosFloristeriaId;
         Nombre = Nombre;
         ImagenRuta = ImagenRuta;
         Detalle = Detalle;
