@@ -1,3 +1,4 @@
+
 -- Sentencias INSERT para ProductosCafeteria (Bebidas)
 INSERT INTO ProductosCafeteria (ID, Nombre, Categoria, ImagenRuta, Descripcion, PrecioEuros) VALUES
 (1, 'Amanecer Americano', 'Bebida', '../imagenes/cafeteria/cafe1.png', 'El clásico que nunca falla. Suave, aromático y ligero, ideal para comenzar el día.', 2.50),
@@ -75,7 +76,6 @@ INSERT INTO IngredientesCafeteria (ProductoID, Ingrediente) VALUES
 (33, 'Pan rústico'), (33, 'Tomate natural rallado'), (33, 'Aceite de oliva'), (33, 'Jamón Serrano');
 
 
-
 -- Sentencias INSERT para AlergenosCafeteria
 INSERT INTO AlergenosCafeteria (ProductoID, Alergeno) VALUES
 (2, 'Lácteos'),
@@ -105,7 +105,6 @@ INSERT INTO AlergenosCafeteria (ProductoID, Alergeno) VALUES
 (31, 'Gluten'), (31, 'Sésamo (si el pan lleva)'),
 (32, 'Gluten'),
 (33, 'Gluten');
-
 
 
 -- Sentencias INSERT para ProductosFloristeria
@@ -142,4 +141,30 @@ INSERT INTO ProductosFloristeria (ID, Nombre, ImagenRuta, Detalle, DescripcionCu
 (529, 'Tulipanes', '../imagenes/flores/tulipanes.png', 'Un ramo vibrante de tulipanes en tonos rojos y naranjas, que simboliza la alegría y el amor perfecto.', 'Los Tulipanes son originarios de Asia Central y Turquía. Siguen creciendo en el jarrón; colócalos en poca agua y en un lugar fresco para controlar su crecimiento y que se mantengan erguidos.', 26.00),
 (530, 'Violetas', '../imagenes/flores/violetas.png', 'Pequeñas y encantadoras violetas en tonos lavanda, perfectas para un detalle dulce y nostálgico.', 'Las violetas (Viola odorata) son nativas de Europa y Asia. Las violetas en maceta prefieren la sombra parcial y un suelo constantemente húmedo pero bien drenado.', 19.00);
 
+-- Inserción en la tabla Mesas
+INSERT INTO Mesas (ID, NumeroMesa, Capacidad, Disponible, Ubicacion) VALUES
+(1, 10, 2, 0, 'Ventana'),
+(2, 20, 4, 1, 'Centro'),
+(3, 30, 6, 0, 'Sofá'),
+(4, 40, 4, 1, 'Terraza'),
+(5, 50, 2, 1, 'Barra');
 
+-- Pedido 1: Para la Mesa 1 (Número 10)
+INSERT INTO Pedidos (MesaID, FechaHoraPedido, PedidoCompletado, Total, Notas) VALUES
+(1, '2025-11-19 18:00:00', 0, 4.60, 'El cliente pidió la leche tibia.');
+
+-- Detalle del Pedido 1 (Café con Leche y Croissant)
+INSERT INTO DetallePedido (PedidoID, ProductoCafeteriaID, ProductoFloristeriaID, Cantidad, PrecioUnitario) VALUES
+(1000, 5, NULL, 1, 2.80);
+INSERT INTO DetallePedido (PedidoID, ProductoCafeteriaID, ProductoFloristeriaID, Cantidad, PrecioUnitario) VALUES
+(1000, 15, NULL, 1, 1.80);
+
+-- Pedido 2: Para la Mesa 3 (Número 30)
+INSERT INTO Pedidos (MesaID, FechaHoraPedido, PedidoCompletado, Total, Notas) VALUES
+(3, '2025-11-19 18:25:30', 0, 41.40, 'Ramo para llevar. Pagarán en caja.');
+
+-- Detalle del Pedido 2 (2 Cappuccinos y Rosas Rojas)
+INSERT INTO DetallePedido (PedidoID, ProductoCafeteriaID, ProductoFloristeriaID, Cantidad, PrecioUnitario) VALUES
+(1001, 3, NULL, 2, 3.20);
+INSERT INTO DetallePedido (PedidoID, ProductoCafeteriaID, ProductoFloristeriaID, Cantidad, PrecioUnitario) VALUES
+(1001, NULL, 527, 1, 35.00);
