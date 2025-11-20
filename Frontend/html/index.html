@@ -20,77 +20,77 @@
 
 <body>
 
-    <header class="navbar-top">
-        <div class="navbar-container">
-            <div class="logo">
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
                 <img src="../imagenes/generales/logo1-azul.png" alt="Logo Essencia">
             </div>
-            <button class="menu-toggle" aria-label="Toggle navigation">
+            <button class="header__toggle menu-toggle" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
 
-        <div class="nav-menu">
-            <nav class="nav-links">
+        <div class="header__nav nav-menu">
+            <nav class="header__list">
                 <ul>
-                    <li><a href="#">Cafetería</a></li>
-                    <li><a href="../html/floristeria.html">Floristería</a></li>
-                    <li><a href="#">Quiénes somos</a></li>
-                    <li><a href="#">Menú</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Cafetería</a></li>
+                    <li class="header__item"><a href="../html/floristeria.html" class="header__link">Floristería</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Quiénes somos</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Menú</a></li>
                 </ul>
             </nav>
-            <div class="nav-buttons">
-                <a href="../html/register.html" class="btn btn-outline-blue">Únete ahora</a>
-                <a href="../html/login.html" class="btn btn-primary">Iniciar sesión</a>
+            <div class="header__buttons">
+                <a href="../html/register.html" class="btn btn--outline-blue">Únete ahora</a>
+                <a href="../html/login.html" class="btn btn--primary">Iniciar sesión</a>
             </div>
         </div>
     </header>
 
-    <section class="banner-conocenos">
-        <div class="banner-overlay-img">
-            <img src="../imagenes/generales/conocenos.png" alt="Detalle de flores sobre la sección Conócenos">
+    <section class="banner">
+        <div class="banner__overlay-img">
+            <img src="../imagenes/generales/conocenos.png" alt="Detalle de flores">
         </div>
-        <div class="banner-content">
-            <h2 class="title-main">Conócenos</h2>
-            <p>Tenemos talleres para todas las edades y para todos los gustos: desde cerámica hasta fotografía de
+        <div class="banner__content">
+            <h2 class="banner__title">Conócenos</h2>
+            <p class="banner__text">Tenemos talleres para todas las edades y para todos los gustos: desde cerámica hasta fotografía de
                 flores. Ven a conocernos y a disfrutar de la vida y de las pequeñas figuras en el café y mucho más. Ven
                 a conocernos y mucho más.</p>
-            <button class="btn btn-tertiary">Talleres</button>
+            <button class="btn btn--tertiary">Talleres</button>
         </div>
     </section>
 
-    <section class="flores-del-mes-section">
-        <div class="flores-index-1-bg">
-            <img src="../imagenes/generales/granos1.png" alt="Fondo decorativo en Flores del Mes">
+    <section class="flores-section">
+        <div class="flores-section__bg">
+            <img src="../imagenes/generales/granos1.png" alt="Fondo decorativo">
         </div>
-        <h2 class="section-title">Flores del mes</h2>
-        <div id="flores-del-mes-container" class="flores-grid">
-        </div>
-    </section>
-
-    <section class="recomendacion-barista-section">
-        <h2 class="section-title">Recomendaciones</h2>
-        <div id="recomendacion-barista-container" class="barista-carousel">
+        <h2 class="flores-section__title">Flores del mes</h2>
+        <div id="flores-del-mes-container" class="flores-section__grid">
         </div>
     </section>
 
-    <section class="ubicacion-section">
-        <div class="map-container">
+    <section class="recommendations">
+        <h2 class="recommendations__title">Recomendaciones</h2>
+        <div id="recomendacion-barista-container" class="recommendations__carousel">
+        </div>
+    </section>
+
+    <section class="location">
+        <div class="location__map">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.730303642738!2d2.327666215674393!3d48.86313887928739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2c2c9d5d33%3A0x629577559c5d72f1!2sJard%C3%ADn%20de%20las%20Tuller%C3%ADas!5e0!3m2!1ses!2ses!4v1678822000000!5m2!1ses!2ses"
                 width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </div>
-        <div class="ubicacion-info">
-            <h2 class="section-title">Ubicación</h2>
+        <div class="location__info">
+            <h2>Ubicación</h2>
             <p>Nos encontramos en la Rue de Rivoli, frente al Jardín de las Tullerías, en el corazón de París.</p>
         </div>
     </section>
 
-    <footer class="main-footer">
-        <div class="footer-content">
-            <div class="footer-column">
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__column">
                 <h3>Sobre nosotros</h3>
                 <ul>
                     <li><a href="#">ESSENCIA career</a></li>
@@ -99,7 +99,7 @@
                     <li><a href="#">Nuestro local</a></li>
                 </ul>
             </div>
-            <div class="footer-column">
+            <div class="footer__column">
                 <h3>Información nutricional</h3>
                 <ul>
                     <li><a href="#">Alérgenos</a></li>
@@ -107,7 +107,7 @@
                     <li><a href="#">Alergenos</a></li>
                 </ul>
             </div>
-            <div class="footer-column">
+            <div class="footer__column">
                 <h3>Pedidos y Talleres</h3>
                 <ul>
                     <li><a href="#">Pedidos online</a></li>
@@ -115,18 +115,20 @@
                     <li><a href="#">Reservas talleres</a></li>
                 </ul>
             </div>
-            <div class="footer-column">
+            <div class="footer__column">
                 <h3>Trabaja con nosotros</h3>
                 <ul>
                     <li><a href="#">ESSENCIA career</a></li>
                 </ul>
             </div>
         </div>
-        <div class="footer-bottom">
-            <a href="#">Contacto</a>
-            <a href="#">Política de privacidad</a>
-            <a href="#">Política de Cookies</a>
-            <div class="social-icons">
+        <div class="footer__bottom">
+            <div>
+                <a href="#">Contacto</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Política de Cookies</a>
+            </div>
+            <div class="footer__social">
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
