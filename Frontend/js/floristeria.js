@@ -48,7 +48,6 @@ function renderTrending() {
                         <p class="product-desc">${producto.detalle}</p>
                         <p class="product-price">${priceDisplay}€</p>
                         <div class="product-actions">
-                            <button class="btn btn-secondary">Añadir</button>
                             <button class="btn btn-primary">Ver</button>
                         </div>
                     </div>
@@ -59,21 +58,38 @@ function renderTrending() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    renderTrending();
+    const trendingContainer = document.getElementById('trending-products');
+    
+    const trendingProducts = apiEssencia.productos_floristeria.slice(0, 3);
 
-    const scrollLeftBtn = document.getElementById('scroll-left');
-    const scrollRightBtn = document.getElementById('scroll-right');
-    const gallery = document.querySelector('.scroll-gallery');
+    trendingContainer.innerHTML = trendingProducts.map(product => `
+        <a href="detalleFloristeria.html?id=${product.id}" class="trending-card">
+            <div class="product-image-container">
+                <img src="${product.imagen}" alt="${product.nombre}">
+            </div>
+            <div class="product-info">
+                <div class="product-name">${product.nombre}</div>
+                <div class="product-desc">${product.detalle}</div>
+                <div class="product-price">${product.precio_euros.toFixed(2)}€</div>
+                <div class="product-actions">
+                    <button class="btn btn--green">Ver detalle</button>
+                </div>
+            </div>
+        </a>
+    `).join('');
 
-    if (gallery && scrollLeftBtn && scrollRightBtn) {
-        const scrollAmount = 316;
+    const scrollContainer = document.querySelector('.gallery__scroll');
+    const leftBtn = document.getElementById('scroll-left');
+    const rightBtn = document.getElementById('scroll-right');
 
-        scrollLeftBtn.addEventListener('click', () => {
-            gallery.scrollLeft -= scrollAmount;
+    if(leftBtn && rightBtn && scrollContainer) {
+        leftBtn.addEventListener('click', () => {
+            scrollContainer.scrollBy({ left: -300, behavior: 'smooth' });
         });
 
-        scrollRightBtn.addEventListener('click', () => {
-            gallery.scrollLeft += scrollAmount;
+        rightBtn.addEventListener('click', () => {
+            scrollContainer.scrollBy({ left: 300, behavior: 'smooth' });
         });
     }
 });
+

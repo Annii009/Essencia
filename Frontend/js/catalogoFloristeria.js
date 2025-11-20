@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const verMasBtn = document.getElementById('ver-mas-btn');
 
     if (!container || !verMasContainer || !verMasBtn) {
-        console.error("Faltan elementos HTML para la carga de productos.");
         return;
     }
 
@@ -17,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         loteDeProductos.forEach(product => {
             const productCardHTML = `
-                <div class="trending-card catalogo-card">
+                <a href="detalleFloristeria.html?id=${product.id}" class="trending-card catalogo-card">
                     <div class="product-image-container">
                         <img src="${product.imagen}" alt="${product.nombre}">
                     </div>
@@ -26,11 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         <p class="product-desc">${product.detalle}</p>
                         <p class="product-price">${product.precio_euros.toFixed(2).replace('.', ',')}€</p>
                         <div class="product-actions">
-                            <button class="btn btn-secondary">Añadir</button>
                             <button class="btn btn-primary">Ver</button>
                         </div>
                     </div>
-                </div>
+                </a>
             `;
             container.insertAdjacentHTML('beforeend', productCardHTML);
         });

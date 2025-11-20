@@ -1,8 +1,8 @@
 const createFlowerCard = (flor) => {
     return `
-        <div class="flor-card">
+        <a href="detalleFloristeria.html?id=${flor.id}" class="flor-card">
             <img src="${flor.imagen}" alt="Imagen de ${flor.nombre}">
-        </div>
+        </a>
     `;
 };
 
@@ -18,7 +18,7 @@ const createCoffeeCard = (producto) => {
                 <p>${producto.descripcion}</p>
                 <div class="price">${producto.precio_euros.toFixed(2)}€</div>
                 <div class="cafe-actions">
-                    <button class="btn btn-ver">Ver</button>
+                    <button class="btn btn--ver">Ver</button>
                 </div>
             </div>
         </div>
