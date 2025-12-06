@@ -1,0 +1,95 @@
+//estilos del footer
+
+@use '../base/variables' as var;
+.footer {
+    background-color: var.$color-primary;
+    color: var.$color-bg;
+    padding: 30px 5%;
+    font-size: 0.9rem;
+
+    &--green { 
+        background-color: var.$color-accent; 
+    }
+    &--rose { 
+        background-color: var.$color-rose; 
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+        @media (min-width: var.$bp-desktop) { 
+            flex-direction: row; 
+            justify-content: space-between; 
+        }
+    }
+
+    &__column {
+        flex-basis: 23%;
+
+        h3 {
+            font-family: var.$font-title;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        ul { 
+            list-style: none; 
+        }
+        
+        ul li a {
+            display: block;
+            padding: 3px 0;
+            font-weight: 300;
+            text-decoration: none;
+            transition: color 0.3s;
+            
+            &:hover { 
+                color: #f0f0f0; 
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+        gap: 15px;
+
+        @media (min-width: var.$bp-desktop) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__legal {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+            font-weight: 300;
+            color: inherit;
+            
+            &:hover { 
+                text-decoration: underline; 
+            }
+        }
+    }
+
+    &__social {
+        a { 
+            font-size: 1.2rem; 
+            margin-left: 15px; 
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+}

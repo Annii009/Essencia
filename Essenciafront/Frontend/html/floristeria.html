@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESSENCIA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Montserrat:wght@300;400;700&family=Tangerine:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/js/floristeria.js"></script>
+    <script src="/js/toggle.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <a href="/html/index.html">
+                    <img src="/imagenes/generales/logo3-verde.png" alt="Logo Essencia">
+                </a>
+            </div>
+            <button class="header__toggle menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div class="header__nav nav-menu">
+            <nav class="header__list">
+                <ul>
+                    <li class="header__item"><a href="/html/cafeteria.html" class="header__link">Cafetería</a></li>
+                    <li class="header__item"><a href="/html/index.html" class="header__link">Inicio</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Quiénes somos</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Menú</a></li>
+                </ul>
+            </nav>
+            <div class="header__buttons">
+                <a href="#" class="btn btn--outline-green">Únete ahora</a>
+                <a href="#" class="btn btn--green">Iniciar sesión</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-florist" role="banner">
+        <div class="hero-florist__bg">
+            <img src="/imagenes/generales/fondo-flores.png" alt="Ramo de flores frescas">
+        </div>
+        <div class="hero-florist__content">
+            <h1 class="hero-florist__title">Floristería</h1>
+            <p class="hero-florist__text">Vendemos flores con un toque de café. Ven a conocernos.</p>
+            <a href="/html/catalogoFloristeria.html" class="btn btn--green">Ver todo</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="features__item">
+            <span class="features__icon"><i class="fas fa-feather"></i></span>
+            <p>Diseño y asesoramiento experto para crear el arreglo perfecto.</p>
+        </div>
+        <div class="features__item">
+            <span class="features__icon"><i class="fas fa-seedling"></i></span>
+            <p>Frescura floral diaria y arreglos personalizados para toda ocasión.</p>
+        </div>
+        <div class="features__item">
+            <span class="features__icon"><i class="fas fa-truck-fast"></i></span>
+            <p>Haz tu encargo floral online y recibe tu pedido en 24 horas.</p>
+        </div>
+        <div class="features__item">
+            <span class="features__icon"><i class="fas fa-palette"></i></span>
+            <p>Talleres creativos de arte floral para aprender y diseñar tus propios ramos.</p>
+        </div>
+    </section>
+
+    <section class="promo-cards">
+        <div class="promo-cards__item promo-cards__item--encargos">
+            <div class="promo-cards__overlay"></div>
+            <div class="promo-cards__content">
+                <h2>Encargos</h2>
+                <button class="btn btn--transparent">Encargar</button>
+            </div>
+        </div>
+
+        <div class="promo-cards__item promo-cards__item--talleres">
+            <div class="promo-cards__overlay"></div>
+            <div class="promo-cards__content">
+                <h2>Talleres</h2>
+                <button class="btn btn--transparent">Ir talleres</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="trending">
+        <h2 class="section-title">Trending</h2>
+        <div class="trending__grid" id="trending-products">
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="about__content">
+            <h2 class="about__logo">ESSENCIA <span class="about__subtitle">Floristería & Cafetería</span></h2>
+            <p class="about__text">En Essencia, nos dedicamos a llevar la frescura y la inspiración floral a tu vida.
+                Queremos que encuentres el arreglo perfecto, sea cual sea la ocasión. Puedes realizar encargos
+                personalizados para diseñar un detalle único y memorable, o si prefieres la comodidad, nuestra venta
+                online te permite seleccionar y recibir tus flores favoritas directamente en casa. Por supuesto, te
+                invitamos a visitar nuestra tienda, un verdadero oasis de aromas y colores donde nuestro equipo estará
+                encantado de asesorarte. Además, si te apasiona el mundo floral y quieres aprender a crear tus propios
+                diseños, te ofrecemos la oportunidad de inscribirte en nuestros talleres didácticos y llenos de
+                creatividad.</p>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <h2 class="section-title">Diseños y Talleres</h2>
+
+        <div class="gallery__container">
+            <button id="scroll-left" class="gallery__arrow gallery__arrow--left">‹</button>
+
+            <div class="gallery__scroll">
+                <img src="/imagenes/generales/ejemplo1.png" alt="Ramo de rosas negras">
+                <img src="/imagenes/generales/ejemplo10.png" alt="Arreglo floral primaveral">
+                <img src="/imagenes/generales/ejemplo11.png" alt="Taller de arreglos de otoño">
+                <img src="/imagenes/generales/ejemplo12.png" alt="Ramo de flores vibrantes">
+                <img src="/imagenes/generales/ejemplo5.png" alt="Ramo de rosas negras">
+                <img src="/imagenes/generales/ejemplo2.png" alt="Ramo de rosas negras">
+            </div>
+
+            <button id="scroll-right" class="gallery__arrow gallery__arrow--right">›</button>
+        </div>
+    </section>
+
+    <footer class="footer footer--green">
+        <div class="footer__content">
+            <div class="footer__column">
+                <h3>Sobre nosotros</h3>
+                <ul>
+                    <li><a href="#">ESSENCIA career</a></li>
+                    <li><a href="#">Quiénes somos</a></li>
+                    <li><a href="#">Floristería</a></li>
+                    <li><a href="#">Nuestro local</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3>Información nutricional</h3>
+                <ul>
+                    <li><a href="#">Alérgenos</a></li>
+                    <li><a href="#">Información nutricional</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3>Pedidos y Talleres</h3>
+                <ul>
+                    <li><a href="#">Pedidos online</a></li>
+                    <li><a href="#">Reservas floristería</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3>Trabaja con nosotros</h3>
+                <ul>
+                    <li><a href="#">ESSENCIA career</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__legal">
+                <a href="#">Contacto</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Política de Cookies</a>
+            </div>
+            <div class="footer__social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
