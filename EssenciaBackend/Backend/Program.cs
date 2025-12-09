@@ -5,6 +5,19 @@ using Microsoft.AspNetCore.Mvc;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// CORS muy abierto solo para que funcione
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        policy =>
+        {
+            policy
+                .AllowAnyOrigin()
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+        });
+});
+
 builder.Services.AddControllers();
 
 // Repositorios
@@ -15,7 +28,6 @@ builder.Services.AddScoped<IAlergenosCafeteriaRepository, AlergenosCafeteriaRepo
 builder.Services.AddScoped<IMesasRepository, MesasRepository>();
 builder.Services.AddScoped<IPedidosRepository, PedidosRepository>();
 builder.Services.AddScoped<IDetallePedidoRepository, DetallePedidoRepository>();
-
 
 // Servicios
 builder.Services.AddScoped<IProductosFloristeriaService, ProductosFloristeriaService>();
@@ -33,6 +45,9 @@ var app = builder.Build();
 
 app.UseSwagger();
 app.UseSwaggerUI();
+
+// IMPORTANTE: CORS antes de MapControllers
+app.UseCors("AllowAll");
 
 app.UseHttpsRedirection();
 app.UseAuthorization();

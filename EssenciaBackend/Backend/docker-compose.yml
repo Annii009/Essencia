@@ -1,0 +1,28 @@
+version: '3.9'
+
+services:
+  api:
+    image: annii009/essencia-api:1.0
+    container_name: essencia-api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__CadenaConexionEssencia=Server=host.docker.internal,8308;Database=EssenciaDB;User Id=sa;Password=P@ssw0rd2025!;TrustServerCertificate=True;
+    ports:
+      - "8038:8080"
+    networks:
+      - essencia-net
+
+  frontend:
+    image: annii009/essencia-front:1.0
+    container_name: essencia-front
+    ports:
+      - "8080:80"
+    networks:
+      - essencia-net
+
+networks:
+  essencia-net:
+    driver: bridge
+
+volumes:
+  essencia-sql-data:
